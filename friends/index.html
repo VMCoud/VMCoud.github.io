@@ -140,7 +140,7 @@
             帅帅的南山
         </div>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" id="changeNavbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
     </button>
@@ -191,7 +191,7 @@
 </nav>
 <script>
     /* 移动端导航栏展开/收起切换 */
-    document.getElementsByClassName('navbar-toggler').onclick = function () {
+    document.getElementById('changeNavbar').onclick = function () {
         var element = document.getElementById('navbarSupportedContent');
         if (element.style.display === 'none' || element.style.display === '') {
             element.style.display = 'block';
