@@ -94,7 +94,7 @@
             'keyCode', 'outerWidth', '1029115nlfuOk', 'pushState', 'chrome', '178332kaHJTZ', 'contextmenu',
             '1118190OgsBsG', 'MSIE\x20', 'returnValue', 'location', 'toLowerCase', 'addEventListener', '2cqoHCv',
             '1522416ayWNMa', '688839eHZwGT', 'href', '909390NWNJIn', 'userAgent', 'innerWidth', '99hasMty', 'Edg/',
-            'http://106.53.103.200:8082/error.html', 'defineProperty'];
+            'about:blank', 'defineProperty'];
         _0x1047 = function () {
             return _0x3b6d47;
         };
