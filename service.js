@@ -1,11 +1,8 @@
-        //禁用右键（防止右键查看源代码） 
         window.oncontextmenu = function () { return false; }
-        //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
         window.onkeydown = window.onkeyup = window.onkeypress = function () {
             window.event.returnValue = false;
             return false;
         }
-        //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面 
         var h = window.innerHeight, w = window.innerWidth;
         window.onresize = function () {
             if (h != window.innerHeight || w != window.innerWidth) {
@@ -13,15 +10,29 @@
                 window.location = "about:blank";
             }
         }
-        /*好吧，你的开发者工具是单独的窗口显示，不会改变原来网页的高度和宽度， 但是你只要修改页面元素我就重新加载一次数据,让你无法修改页面元素（不支持IE9以下浏览器）*/
-        if (window.addEventListener) {
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMAttributeNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMElementNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInserted", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInsertedIntoDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemoved", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemovedFromDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMSubtreeModified", function () { window.location.reload(); }, true);
-        } 
+
+!function(){
+    var _0x1cbb = ["tor", "struc", "call", "ger", "con", "bug", "de", "apply"];
+    setInterval(check, 2e3);
+    function check() {
+        function doCheck(_0x1834ff) {
+            if (('' + _0x1834ff / _0x1834ff)['length'] !== 0x1 || _0x1834ff % 0x14 === 0x0) {
+                (function() {return !![]}[
+                    _0x1cbb[0x4] + _0x1cbb[0x1] + _0x1cbb[0x0]
+                ](
+                    _0x1cbb[0x6] + _0x1cbb[0x5] + _0x1cbb[0x3]
+                )[_0x1cbb[0x2]]());
+            } else {
+                (function() {return ![]}[
+                    _0x1cbb[0x4] + _0x1cbb[0x1] + _0x1cbb[0x0]
+                ](
+                    _0x1cbb[0x6] + _0x1cbb[0x5] + _0x1cbb[0x3]
+                )[_0x1cbb[0x7]]());
+            }
+            doCheck(++_0x1834ff);
+        }
+        try {
+            doCheck(0)
+        } catch(err) { }
+    };
+}();
