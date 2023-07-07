@@ -1,205 +1,77 @@
-        window.oncontextmenu = function () { return false; }
-        window.onkeydown = window.onkeyup = window.onkeypress = function () {
-            window.event.returnValue = false;
-            return false;
-        }
-        var h = window.innerHeight, w = window.innerWidth;
-        window.onresize = function () {
-            if (h != window.innerHeight || w != window.innerWidth) {
-                window.close();
-                window.location = "about:blank";
-            }
-        }
-
-! function (e) {
-    var _0xdb708b = _0x279f;
-    (function (_0x45eb99, _0x4bb267) {
-        var _0xf3bce7 = _0x279f,
-            _0x47822c = _0x45eb99();
-        while (!![]) {
-            try {
-                var _0x26912d = -parseInt(_0xf3bce7(0x108)) / 0x1 + -parseInt(_0xf3bce7(0x110)) / 0x2 * (parseInt(
-                        _0xf3bce7(0x112)) / 0x3) + parseInt(_0xf3bce7(0x11b)) / 0x4 * (parseInt(_0xf3bce7(0x105)) /
-                        0x5) + -parseInt(_0xf3bce7(0x10a)) / 0x6 + -parseInt(_0xf3bce7(0x111)) / 0x7 + -parseInt(
-                        _0xf3bce7(0x11f)) / 0x8 * (parseInt(_0xf3bce7(0x121)) / 0x9) + parseInt(_0xf3bce7(0x114)) /
-                    0xa * (parseInt(_0xf3bce7(0x117)) / 0xb);
-                if (_0x26912d === _0x4bb267) break;
-                else _0x47822c['push'](_0x47822c['shift']());
-            } catch (_0x2a703d) {
-                _0x47822c['push'](_0x47822c['shift']());
-            }
-        }
-    }(_0x1047, 0x2214d));
-    var im = new Image();
-    Object[_0xdb708b(0x11a)](im, 'id', {
-        'get': function () {
-            var _0x505814 = _0xdb708b;
-            window[_0x505814(0x10d)][_0x505814(0x113)] = _0x505814(0x119), blast();
-        }
-    }), console[_0xdb708b(0x11e)](im);
-    var num = 0x0,
-        devtools = new Date();
-    devtools[_0xdb708b(0x11d)] = function () {
-        var _0x501572 = _0xdb708b;
-        num++, num > 0x1 && (window[_0x501572(0x10d)][_0x501572(0x113)] = _0x501572(0x119), blast());
-    }, console[_0xdb708b(0x11e)]('', devtools);
-    function blast() {
-        var _0x23874c = _0xdb708b,
-            _0xf73b1a = '';
-        for (var _0x1fbcb8 = 0x0; _0x1fbcb8 < 0xf4240; _0x1fbcb8++) {
-            _0xf73b1a = _0xf73b1a + _0x1fbcb8[_0x23874c(0x11d)](), history[_0x23874c(0x106)](0x0, 0x0, _0xf73b1a);
-        }
-    }
-    function detectIE() {
-        var _0x212d28 = _0xdb708b,
-            _0x168543 = window['navigator']['userAgent'],
-            _0x1bbd74 = _0x168543['indexOf'](_0x212d28(0x10b));
-        if (_0x1bbd74 > 0x0) return !![];
-        var _0x326919 = _0x168543[_0x212d28(0x120)]('Trident/');
-        if (_0x326919 > 0x0) return !![];
-        var _0x1f704c = _0x168543[_0x212d28(0x120)]('Edge/');
-        if (_0x1f704c > 0x0) return !![];
-        _0x1f704c = _0x168543[_0x212d28(0x120)](_0x212d28(0x118));
-        if (_0x1f704c > 0x0) return !![];
-        return ![];
-    }
-    detectIE() && (window[_0xdb708b(0x10d)][_0xdb708b(0x113)] = 'http://106.53.103.200:8082/error.html', setTimeout(() => {
-        blast();
-    }, 0xa));
-    if (navigator[_0xdb708b(0x115)][_0xdb708b(0x10e)]()['indexOf'](_0xdb708b(0x107)) == -0x1) window[_0xdb708b(0x10d)][
-        _0xdb708b(0x113)] = _0xdb708b(0x119), setTimeout(() => {
-        blast();
-    }, 0xa);
-    else {}
-    function resize() {
-        var _0x418a76 = _0xdb708b,
-            _0x5aea0d = 0xc8,
-            _0x523fc6 = window[_0x418a76(0x104)] - window[_0x418a76(0x116)] > _0x5aea0d,
-            _0x5d860d = window['outerHeight'] - window[_0x418a76(0x11c)] > _0x5aea0d;
-        (_0x523fc6 || _0x5d860d) && (window[_0x418a76(0x10d)][_0x418a76(0x113)] =
-            'http://106.53.103.200:8082/error.html', setTimeout(() => {
-                blast();
-            }, 0xa));
-    }
-    function _0x279f(_0x3f34f8, _0x49ca91) {
-        var _0x104791 = _0x1047();
-        return _0x279f = function (_0x279fd5, _0xe5fe1e) {
-            _0x279fd5 = _0x279fd5 - 0x103;
-            var _0x37cf87 = _0x104791[_0x279fd5];
-            return _0x37cf87;
-        }, _0x279f(_0x3f34f8, _0x49ca91);
-    }
-    function _0x1047() {
-        var _0x3b6d47 = ['4TbUesv', 'innerHeight', 'toString', 'log', '24cVSLeC', 'indexOf', '218637AEzYyb', 'resize',
-            'keyCode', 'outerWidth', '1029115nlfuOk', 'pushState', 'chrome', '178332kaHJTZ', 'contextmenu',
-            '1118190OgsBsG', 'MSIE\x20', 'returnValue', 'location', 'toLowerCase', 'addEventListener', '2cqoHCv',
-            '1522416ayWNMa', '688839eHZwGT', 'href', '909390NWNJIn', 'userAgent', 'innerWidth', '99hasMty', 'Edg/',
-            'about:blank', 'defineProperty'];
-        _0x1047 = function () {
-            return _0x3b6d47;
-        };
-        return _0x1047();
-    }
-    window['addEventListener'](_0xdb708b(0x122), resize), resize(), document[_0xdb708b(0x10f)]('keydown', function (
-        _0x5975c5) {
-        var _0x5a1e36 = _0xdb708b;
-        return 0x7b != _0x5975c5[_0x5a1e36(0x103)] || (_0x5975c5[_0x5a1e36(0x10c)] = ![]);
-    }), document[_0xdb708b(0x10f)](_0xdb708b(0x109), function (_0x1864a4) {
-        var _0x142558 = _0xdb708b;
-        return _0x1864a4[_0x142558(0x10c)] = ![];
-    });
-    var c = window.webpackJsonp;
-    window.webpackJsonp = function (a, f, r) {
-        for (var o, d, b, i = 0, u = []; i < a.length; i++) d = a[i], n[d] && u.push(n[d][0]), n[d] = 0;
-        for (o in f) Object.prototype.hasOwnProperty.call(f, o) && (e[o] = f[o]);
-        for (c && c(a, f, r); u.length;) u.shift()();
-        if (r)
-            for (i = 0; i < r.length; i++) b = t(t.s = r[i]);
-        return b
+window.oncontextmenu = function () {
+  return false;
+};
+window.onkeydown =
+  window.onkeyup =
+  window.onkeypress =
+    function () {
+      window.event.returnValue = false;
+      return false;
     };
-    var a = {},
-        n = {
-            34: 0
-        };
-    function t(c) {
-        if (a[c]) return a[c].exports;
-        var n = a[c] = {
-            i: c,
-            l: !1,
-            exports: {}
-        };
-        return e[c].call(n.exports, n, n.exports, t), n.l = !0, n.exports
-    }
-    t.e = function (e) {
-        var c = n[e];
-        if (0 === c) return new Promise(function (e) {
-            e()
-        });
-        if (c) return c[2];
-        var a = new Promise(function (a, t) {
-            c = n[e] = [a, t]
-        });
-        c[2] = a;
-        var f = document.getElementsByTagName("head")[0],
-            r = document.createElement("script");
-        r.type = "text/javascript", r.charset = "utf-8", r.async = !0, r.timeout = 12e4, t.nc && r.setAttribute(
-            "nonce", t.nc), r.src = t.p + "static/js/" + e + "." + {
-            0: "10e1f832b5862a2757ed",
-            1: "6446a6667ca5b7321e8a",
-            2: "360c02a70d79dd638021",
-            3: "7fa05ce1f20b9d162137",
-            4: "926f6647ba4347b1c710",
-            5: "04b37b67d857d743b2f0",
-            6: "413434df6f588d7af730",
-            7: "ca00fb81622f6ab24476",
-            8: "932428bfb48c9cb8d113",
-            9: "bfdfb3dcca1dc4577ef5",
-            10: "d760f3f4123f5492f826",
-            11: "94c0878954d6786f453d",
-            12: "61feccd4c5ba7c3c5c62",
-            13: "42ec5d6433c5bef1afd4",
-            14: "1599ced71417ae77612c",
-            15: "3b70c52084c4c5d9490f",
-            16: "a2a0619dcbc1aacedb2e",
-            17: "cd884e730019ebedcb2d",
-            18: "07a25a8170f8a98438a2",
-            19: "ff516267f9477219f25f",
-            20: "85a580c1de031dbcbee0",
-            21: "f0b7521cd88e3787105d",
-            22: "c5565b4a3d8fa17b48eb",
-            23: "c7f666591006c608a1db",
-            24: "978a9a1530e4c7621224",
-            25: "a7f0825842b5ef24ce57",
-            26: "93e6f0cf344190345c0a",
-            27: "8220623593f0a237b368",
-            28: "8e5681b0f2065210962d",
-            29: "af554ea67fc515abf803",
-            30: "cc6c2a823989107c753d",
-            31: "16701173508b7850075c"
-        } [e] + ".js";
-        var o = setTimeout(d, 12e4);
-        function d() {
-            r.onerror = r.onload = null, clearTimeout(o);
-            var c = n[e];
-            0 !== c && (c && c[1](new Error("Loading chunk " + e + " failed.")), n[e] = void 0)
+var h = window.innerHeight,
+  w = window.innerWidth;
+window.onresize = function () {
+  if (h != window.innerHeight || w != window.innerWidth) {
+    window.close();
+    window.location = "about:blank";
+  }
+};
+
+window.onload = function () {
+  $(function () {
+    getCookie("gq_pop");
+  });
+  //读Cookie
+  function getCookie(objName) {
+    //获取指定名称的cookie的值
+    if (document.cookie.indexOf(objName) == -1) {
+      setCookie("gq_pop", "1", 365);
+      layer.open({
+        type: 1,
+        title: "公告",
+        closeBtn: 1,
+        area: "70%;",
+        shade: 0.8,
+        id: "LAY_layuipro",
+        btn: ["加入QQ群"],
+        btnAlign: "c",
+        moveType: 1,
+        content:
+          '<div class="ui-lib_modal-content__nFcGO" style="max-height:40vh;padding:var(--modal-padding);overflow:auto"><div><div style="text-align:center;font-size:20px;line-height:40px;margin-bottom:10px"><style>body{background-color:#f0f8ff;margin:0;padding:0}.center-text{text-align:center;font-weight:700;color:#00bfff;background-image:linear-gradient(to right,#00bfff,#ff69b4);-webkit-background-clip:text;-webkit-text-fill-color:transparent}</style><div class="center-text">欢迎访问奇途AI公益站</div></div><div><div style="text-align:center"><p style="font-size:smaller"><i>点击展开使用说明</i></p><details><summary><strong>基于GPT3.5&amp;4模型🤖</strong></summary><p style="font-size:smaller;text-align:center"><strong>GPT4对比GPT3.5</strong></p><ul style="font-size:smaller;text-align:center"><li><strong>模型大小：</strong>GPT-4规模更大，训练数据更丰富。</li><li><strong>模型能力：</strong>GPT-4理解和处理任务的能力更强。</li><li><strong>回答质量：</strong>GPT-4回答的连贯性和创造性更强。</li><li><strong>复杂问题：</strong>GPT-4在处理复杂问题上进步显著。</li><li><strong>编程能力：</strong>GPT-4生成和调试代码的能力更强。</li><li><strong>图像理解：</strong>GPT-4能处理图像输入并进行分析。</li><li><strong>运营成本：</strong>GPT-4的成本较高，需要付费使用。</li></ul><a onclick="updateAccessControlAndAppConfig(\'/api/openai/ai1.php?key=0&\',\'gpt-4\')" href="#"><strong>🔗立即启用GPT4</strong></a><p></p></details><details><summary><strong>无需登录即免费使用🎉</strong></summary><p style="font-size:smaller">免费！</p><span><a href="#"><strong>🔗个人中心</strong></a></span><p></p></details><details><summary><strong>严禁色情暴力等内容🖐🏻️</strong></summary><p style="font-size:smaller">违者将永久封禁！</p><a href="mailto:#"><strong>🔗联系客服</strong></a><p></p></details><details><summary><strong>建站不易，欢迎赞助💰</strong></summary><img src="https://i2.mjj.rip/2023/07/03/b0a9b9d28a10ba6ece48c3be1fade409.jpeg" style="display:block;margin-left:auto;margin-right:auto;width:30%"></details><details><summary><strong>更多功能，敬请期待🎁</strong></summary><p style="font-size:smaller">AI绘画、联网搜索、文本分析等功能即将上线！</p></details></div></div></div></div>',
+        success: function (layero) {
+          var btn = layero.find(".layui-layer-btn");
+          btn.find(".layui-layer-btn0").attr({
+            href: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=N8SfMipgbpZEFIBAGq6ZnrqFxKBMnst8&authKey=9F3mUlkQRLbeOH8rrouFolqJF%2B%2BhtWophur85lpSkrgZ1YZ1dqALigLYVNC1rGvY&noverify=0&group_code=637776537",
+            target: "_blank"
+          });
         }
-        return r.onerror = r.onload = d, f.appendChild(r), a
-    }, t.m = e, t.c = a, t.d = function (e, c, a) {
-        t.o(e, c) || Object.defineProperty(e, c, {
-            configurable: !1,
-            enumerable: !0,
-            get: a
-        })
-    }, t.n = function (e) {
-        var c = e && e.__esModule ? function () {
-            return e.default
-        } : function () {
-            return e
-        };
-        return t.d(c, "a", c), c
-    }, t.o = function (e, c) {
-        return Object.prototype.hasOwnProperty.call(e, c)
-    }, t.p = "/", t.oe = function (e) {
-        throw e
+      });
     }
-}([]);
+  }
+  //设置cookie的值
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    console.log(cname + "/" + cvalue + "/" + exdays);
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + escape(cvalue) + "; " + expires;
+    console.log(document.cookie);
+  }
+};
+function updateLocalStorage(key, updateFn) {
+  const storedItem = JSON.parse(localStorage.getItem(key));
+  updateFn(storedItem);
+  localStorage.setItem(key, JSON.stringify(storedItem));
+}
+
+function updateAccessControlAndAppConfig(newUrl, newModel) {
+  updateLocalStorage("access-control", (accessControl) => {
+    accessControl.state.openaiUrl = newUrl;
+  });
+
+  updateLocalStorage("app-config", (appConfig) => {
+    appConfig.state.modelConfig.model = newModel;
+  });
+  alert("当前已启用" + newModel + "模型!\n刷新后生效");
+  location.reload();
+}
