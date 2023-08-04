@@ -1,5 +1,5 @@
 //判断来路
-const validReferers = ["https://7tu.link/", "https://c.aalib.net/", "https://github.com/"];
+const validReferers = ["https://7tu.link/", "https://c.aalib.net/", "https://github.com/", "https://gpt.freet.top/"];
 const referrer = document.referrer;
 
 if (!validReferers.includes(referrer)) {
