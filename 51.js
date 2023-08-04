@@ -5,8 +5,8 @@ const referrer = document.referrer;
 if (!validReferers.some(referer => referrer.includes(referer))) {
   document.body.innerHTML = '当前页面失效，请在发布页重新进入';
   alert('当前页面失效，请在发布页重新进入');
-  window.location.href = validReferers[0]; // 重定向到第一个有效的引用来源
   window.stop();
+  window.location.href = validReferers[0]; // 重定向到第一个有效的引用来源
 }
 
 //51统计
