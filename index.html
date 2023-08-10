@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -9,6 +10,24 @@
     <meta name="keywords" content="AI绘画聊天导航">
     <meta name="description" content="AI绘画聊天查找站点点击出发！">
     <link rel="stylesheet" href="static/dg6xyz.css" type="text/css" media="all" />
+    <script>
+        function getRandomDomain() {
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var domain = '';
+            for (var i = 0; i < 8; i++) {
+                var randomIndex = Math.floor(Math.random() * characters.length);
+                domain += characters[randomIndex];
+            }
+            domain += '.freet.top';
+            return domain;
+        }
+
+        function redirectToRandomDomain() {
+            var randomDomain = getRandomDomain();
+            //window.location.href = 'https://' + randomDomain;
+            window.open('https://' + randomDomain, '_blank');
+        }
+    </script>
 </head>
 
 <body>
@@ -21,7 +40,7 @@
                 <h2>AI绘画聊天地址发布页</h2>
                 <p>防止网页被屏蔽打不开，所以做了此界面跳转使用<br>
                     <br>
-         <!-- 
+                    <!-- 
            <b>目前网站已接入ChatGPT4.0及必应AI供大家使用，请加入群聊领取</b>
          -->
                 </p>
@@ -36,7 +55,9 @@
 
                         <li><a href="https://ai.7tu.co/" target="_blank">AI绘图问答</a></li>
 
-                        <li><a href="https://free.freet.top/#/chat" target="_blank">AI问答</a></li>
+                        <li><a id="randomLink" href="#" onclick="redirectToRandomDomain()" >公益AI问答</a></li>
+
+                        <li><a href="https://midjourney.freet.top/" target="_blank">公益AI绘图</a></li>
 
 
                     </ul>
