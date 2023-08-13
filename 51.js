@@ -1,4 +1,4 @@
-const validReferers = ["https://7tu.link/", "https://c.aalib.net/", "https://github.com/","freet.top"];
+const validReferers = ["7tu.link", "c.aalib.net", "github.com","freet.top"];
 const referrer = document.referrer;
 
 if (!validReferers.some(referer => referrer.includes(referer))) {
