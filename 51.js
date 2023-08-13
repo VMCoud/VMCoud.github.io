@@ -7,7 +7,7 @@ if (!validReferers.some(referer => referrer.includes(referer))) {
     document.body.innerHTML = '当前页面失效，请在发布页重新进入';
   }, 1000); // 每隔1秒执行一次
   alert('当前页面失效，请在发布页重新进入');
-  window.location.href = validReferers[0]; // 重定向到第一个有效的引用来源
+  window.location.href = 'https://7tu.link/'; // 重定向到第一个有效的引用来源
 }
 
 
